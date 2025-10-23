@@ -1,0 +1,177 @@
+.capbang-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 34px;
+  background: #0d1117;
+  border-radius: 16px;
+  color: #eaf6fb;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.capbang-title {
+  text-align: center;
+  color: #00cfd8;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 22px;
+  letter-spacing: 1px;
+}
+
+.capbang-form {
+  display: block;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.form-row label {
+  font-size: 0.86rem;
+  color: #cdeef3;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-row input, .form-row textarea {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #14171b;
+  color: #eaf6fb;
+  font-size: 0.98rem;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
+  outline: none;
+  transition: box-shadow .18s ease, transform .08s ease;
+}
+
+.form-row input:focus {
+  box-shadow: 0 0 0 3px rgba(0,204,216,0.12);
+  transform: translateY(-1px);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 18px;
+}
+
+.divider {
+  border: none;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.03);
+  margin: 18px 0;
+  border-radius: 2px;
+}
+
+.section-title {
+  color: #ffd369;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+.btn-submit {
+  background: linear-gradient(90deg, #00bcd4, #0099b8);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.btn-submit:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 188, 212, 0.12);
+}
+
+.btn-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-reset {
+  padding: 10px 14px;
+  background: transparent;
+  color: #cdeef3;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.04);
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .form-actions {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+
+/* Căn chỉnh chung cho body */
+.capbang-container {
+  background: #121212;
+  color: white;
+  width: 600px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 255, 200, 0.2);
+}
+
+.capbang-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00eaff;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  display: block;
+  width: 100%;
+  background: #1e1e1e;
+  color: #00eaff;
+  border: 1px solid #00eaff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+button {
+  background: #00eaff;
+  color: #121212;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00bcd4;
+}
